@@ -1,0 +1,49 @@
+POST localhost:5000/
+Content-Type: application/json
+Accept: text/plain
+json=
+"{
+'user': 'merhaba',
+'passw': 'sifre'
+}"
+
+###
+POST localhost:5000/login
+"{
+user:"m",
+passw:"m"
+}"
+###
+
+###
+GET localhost:5000/properties
+###
+POST localhost:5000/property?name=merdiven
+###
+POST localhost:5000/register?user=mehmet&passw=753
+###
+POST localhost:5000/login?user=mehmet&passw=753
+###
+POST localhost:5000/property/create
+###
+POST localhost:5000/property/delete
+###
+GET localhost:5000/allusers
+###
+
+POST localhost:5000/register
+Content-Type: application/json
+Accept:*/*
+{
+'user': 'merhaba',
+'passw': 'sifre'
+}
+
+###
+
+
+
+
+
+
+
